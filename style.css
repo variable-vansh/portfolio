@@ -1,8 +1,8 @@
 /* Fixed Sidebar */
 .sidebar {
-  background-color: #2c3e50;
-  color: #ecf0f1;
-  border-right: 2px solid #34495e;
+  background-color: #ffffff;
+  color: #000000;
+  border-right: 2px solid #000000;
 
   position: fixed;
   width: 38.2vw;
@@ -30,20 +30,21 @@
 
 .content-section > nav a {
   text-decoration: none;
-  color: #ecf0f1;
+  color: #000000;
   padding: 8px 12px;
+  border: 1px solid #000000;
   border-radius: 4px;
   transition: all 0.3s ease;
 }
 
 .content-section > nav a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: #3498db;
+  background-color: #f0f0f0;
+  color: #000000;
 }
 
 .content-section > nav a.active {
-  background-color: #3498db;
-  color: white;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 /* Main Content Area */
@@ -89,29 +90,35 @@
 
 .social-links a {
   text-decoration: none;
-  color: #ecf0f1;
+  color: #000000;
   margin: 5px 0;
+  padding: 4px 8px;
+  border: 1px solid #000000;
+  border-radius: 4px;
 }
 
 .social-links a:hover {
-  color: #3498db;
+  background-color: #f0f0f0;
 }
 
 #about {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #3498db;
+  background-color: #ffffff;
+  border: 2px solid #000000;
 }
 
 .about-header {
   height: 38.2%;
   width: 100%;
   background-color: #ffffff;
+  color: #000000;
   margin-top: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-bottom: 2px solid #000000;
 }
 
 .about-main {
@@ -125,27 +132,29 @@
   height: 38.2%;
   background-color: #ffffff;
   display: flex;
+  border-bottom: 1px solid #000000;
 }
 
 .about-main-top-left {
   width: 38.2%;
   padding: 20px;
   background-color: #ffffff;
-  color: #2c3e50;
+  color: #000000;
+  border-right: 1px solid #000000;
 }
 
 .about-main-top-right {
   width: 61.8%;
   padding: 20px;
-  background-color: #ecf0f1;
-  color: #2c3e50;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .about-main-bottom {
   height: 61.8%;
-  background-color: #e74c3c;
+  background-color: #ffffff;
   padding: 20px;
-  color: white;
+  color: #000000;
 }
 
 .secondary-about {
@@ -159,8 +168,9 @@
   width: 61.8%;
   height: 100%;
   padding: 20px;
-  color: white;
-  background-color: #34495e;
+  color: #000000;
+  background-color: #ffffff;
+  border-left: 2px solid #000000;
 }
 
 /* Basic reset */
