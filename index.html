@@ -3,174 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vansh - Portfolio</title>
-    <link rel="icon" href="./favicon.png" sizes="32x32" />
-    <link rel="stylesheet" href="style.css" />
+    <title>Vansh Mishra</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!-- Left Sidebar - Fixed -->
-    <aside class="sidebar">
-      <div class="sidebar-content">
-        <!-- Name and Title -->
-        <div class="sidebar-header">
-          <h1 class="name">Vansh Mishra</h1>
-          <!-- <p class="title">Builder</p> -->
-        </div>
+    <!-- Fixed Sidebar -->
+    <div class="sidebar">
+      <!-- Name -->
+      <div class="name-tagline">
+        <h1>Vansh Mishra</h1>
 
-        <!-- Navigation -->
-        <nav class="sidebar-nav">
-          <a href="#about" class="nav-item active">About</a>
-          <a href="#projects" class="nav-item">Projects</a>
-          <a href="#blog" class="nav-item">Blog</a>
+        <!-- Tagline -->
+        <p class="tagline">Learning to Build</p>
+        <p class="tagline">Building to Learn</p>
+      </div>
+
+      <!-- Content Section with Navigation -->
+      <div class="content-section">
+        <nav>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
         </nav>
-        <!-- Contact -->
-        <div class="sidebar-contact">
-          <!-- <h3 class="contact-title">Get In Touch</h3> -->
-          <div class="contact-logos">
-            <a href="mailto:your.email@example.com" class="contact-logo">
-              <span class="contact-icon">✉</span>
-            </a>
-            <a href="https://github.com/yourusername" class="contact-logo">
-              <span class="contact-icon">⚡</span>
-            </a>
-            <a href="https://linkedin.com/in/yourusername" class="contact-logo">
-              <span class="contact-icon">💼</span>
-            </a>
-            <a href="https://twitter.com/yourusername" class="contact-logo">
-              <span class="contact-icon">🐦</span>
-            </a>
-          </div>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="contact-section">
+        <h3>Contact Me</h3>
+        <div class="social-links">
+          <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+          <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
+          <a href="https://discord.com/users/youruserid" target="_blank"
+            >Discord</a
+          >
+          <a href="https://linkedin.com/in/yourusername" target="_blank"
+            >LinkedIn</a
+          >
+          <a href="mailto:your.email@example.com">Email</a>
         </div>
       </div>
-    </aside>
+    </div>
 
-    <!-- Main Content - Scrollable -->
-    <main class="main-content">
-      <!-- About Section -->
-      <section id="about" class="content-section">
-        <div class="section-container">
-          <h2 class="section-title">About</h2>
-          <div class="about-content">
-            <p class="about-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-            </p>
-            <p class="about-text">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit
-              anim id est laborum.
-            </p>
-            <div class="skills">
-              <h3 class="skills-title">Tech Stack</h3>
-              <div class="skills-grid">
-                <span class="skill-tag">React</span>
-                <span class="skill-tag">Node.js</span>
-                <span class="skill-tag">Express</span>
-                <span class="skill-tag">PostgreSQL</span>
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">TypeScript</span>
+    <!-- Main Content Area -->
+    <div class="main-content">
+      <section id="about">
+        <div class="about-header">
+          <h1>About header</h1>
+        </div>
+        <div class="secondary-about">
+          <div class="about-main">
+            <div class="about-main-top">
+              <div class="about-main-top-left">
+                <h3>About Main Top Left</h3>
+                <p>Left subdivision...</p>
+              </div>
+              <div class="about-main-top-right">
+                <h3>About Main Top Right</h3>
+                <p>Right subdivision...</p>
               </div>
             </div>
+            <div class="about-main-bottom">
+              <h3>About Main Bottom</h3>
+              <p>This is the bottom section of the smaller division...</p>
+            </div>
+          </div>
+          <div class="about-right">
+            <h2>About Right</h2>
+            <p>This is the larger section that remains undivided...</p>
           </div>
         </div>
       </section>
 
-      <!-- Projects Section -->
-      <section id="projects" class="content-section">
-        <div class="section-container">
-          <h2 class="section-title">Projects</h2>
-          <div class="projects-content">
-            <div class="project-placeholder">
-              <h3 class="project-title">Featured Project</h3>
-              <p class="project-description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <div class="project-tags">
-                <span class="project-tag">React</span>
-                <span class="project-tag">Node.js</span>
-                <span class="project-tag">PostgreSQL</span>
-              </div>
-            </div>
-
-            <div class="project-placeholder">
-              <h3 class="project-title">Another Project</h3>
-              <p class="project-description">
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <div class="project-tags">
-                <span class="project-tag">JavaScript</span>
-                <span class="project-tag">CSS3</span>
-                <span class="project-tag">HTML5</span>
-              </div>
-            </div>
-
-            <div class="project-placeholder">
-              <h3 class="project-title">Third Project</h3>
-              <p class="project-description">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur.
-              </p>
-              <div class="project-tags">
-                <span class="project-tag">Express</span>
-                <span class="project-tag">MongoDB</span>
-                <span class="project-tag">API</span>
-              </div>
-            </div>
-          </div>
-        </div>
+      <section id="projects">
+        <h2>Projects</h2>
+        <p>Projects section content goes here...</p>
       </section>
+    </div>
 
-      <!-- Blog Section -->
-      <section id="blog" class="content-section">
-        <div class="section-container">
-          <h2 class="section-title">Blog</h2>
-          <div class="blog-content">
-            <article class="blog-placeholder">
-              <h3 class="blog-title">First Blog Post</h3>
-              <p class="blog-excerpt">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam.
-              </p>
-              <div class="blog-meta">
-                <span class="blog-date">June 15, 2025</span>
-                <span class="blog-read-time">5 min read</span>
-              </div>
-            </article>
-
-            <article class="blog-placeholder">
-              <h3 class="blog-title">Second Blog Post</h3>
-              <p class="blog-excerpt">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat.
-              </p>
-              <div class="blog-meta">
-                <span class="blog-date">June 10, 2025</span>
-                <span class="blog-read-time">3 min read</span>
-              </div>
-            </article>
-
-            <article class="blog-placeholder">
-              <h3 class="blog-title">Third Blog Post</h3>
-              <p class="blog-excerpt">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam rem aperiam.
-              </p>
-              <div class="blog-meta">
-                <span class="blog-date">June 5, 2025</span>
-                <span class="blog-read-time">7 min read</span>
-              </div>
-            </article>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
