@@ -1,6 +1,18 @@
+@font-face {
+  font-family: "Merriweather";
+  src: url(./assets/fonts/Merriweather_120pt-Black.ttf);
+}
+
+@font-face {
+  font-family: "roboto slab";
+  src: url(./assets/roboto-font/RobotoSlab-SemiBold.ttf);
+}
+
 * {
   margin: 0;
   box-sizing: border-box;
+
+  font-family: "roboto slab", sans-serif;
 }
 
 .background-image {
@@ -26,33 +38,46 @@
   justify-content: space-between;
   position: absolute;
   height: 90vh;
-  width: 45vw;
+  width: 40vw;
   z-index: 1;
   top: 50%;
-  left: 27%;
-  transform: translate(-50%, -50%);
+  left: 5vh;
+  transform: translateY(-50%);
   background: rgba(188, 188, 188, 0.69);
-  border-radius: 16px;
-  backdrop-filter: blur(11.5px);
+  color: white;
+  border-radius: 30px;
+  backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(11.5px);
 }
 
 .name {
-  color: white;
+  margin-top: 2rem;
   text-align: center;
-  margin-bottom: 2rem;
 }
 
 .name h1 {
-  font-size: 2.5rem;
+  font-size: 4rem;
   margin-bottom: 1rem;
   font-weight: bold;
 }
 
 .name p {
-  font-size: 1.2rem;
+  font-size: 2rem;
   margin-bottom: 0.5rem;
   opacity: 0.9;
+  margin: 1.5rem;
+}
+
+mark {
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+
+  font-size: 2.2rem;
+  background: #0f90c0;
+  color: white;
+  /* border-radius: 30px; */
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(11.5px);
 }
 
 .contact-section {
@@ -72,24 +97,26 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  transition: all 0.3s ease;
+  transition: all 0.1s ease;
   text-decoration: none;
-  border: 3px solid #c0c0c0;
+  /* border: 3px solid #c0c0c0; */
   background-color: white;
 }
 
 .contact-link:hover {
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4),
-    -2px -2px 4px rgba(255, 255, 255, 0.8),
-    inset 1px 1px 2px rgba(255, 255, 255, 0.9),
-    inset -1px -1px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3),
+    -4px -4px 8px rgba(255, 255, 255, 0.8), 4px -4px 8px rgba(0, 0, 0, 0.1),
+    -4px 4px 8px rgba(255, 255, 255, 0.6),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.9),
+    inset -2px -2px 4px rgba(0, 0, 0, 0.15);
 }
 
 .contact-link:active {
   transform: translateY(-1px);
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3),
-    -4px -4px 8px rgba(255, 255, 255, 0.6), inset 3px 3px 6px rgba(0, 0, 0, 0.2),
-    inset -3px -3px 6px rgba(255, 255, 255, 0.7);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4),
+    -2px -2px 4px rgba(255, 255, 255, 0.6), 2px -2px 4px rgba(0, 0, 0, 0.2),
+    -2px 2px 4px rgba(255, 255, 255, 0.4), inset 4px 4px 8px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 8px rgba(255, 255, 255, 0.7);
 }
 
 /* Style for logo images */
