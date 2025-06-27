@@ -1,34 +1,11 @@
-/* Background overlay */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("your-background-image.jpg"); /* Replace with your image path */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  filter: blur(3px);
-  z-index: -2;
-}
-
-/* Semi-transparent overlay for better readability */
-body::after {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
-  z-index: -1;
-}
-
 /* Fixed Sidebar */
 .sidebar {
-  background-color: #ff6b6b;
+  background: linear-gradient(
+    0deg,
+    hsla(212, 72%, 26%, 1) 0%,
+    hsla(212, 71%, 12%, 1) 100%
+  );
+
   color: #ffffff;
 
   position: fixed;
@@ -65,11 +42,6 @@ body::after {
 
 .content-section > nav a:hover {
   background-color: rgba(255, 255, 255, 0.2);
-  color: #ffffff;
-}
-
-.content-section > nav a.active {
-  background-color: #4ecdc4;
   color: #ffffff;
 }
 
@@ -135,8 +107,9 @@ body::after {
 .about-header {
   height: 38.2%;
   width: 100%;
-  background-color: #ab47bc;
-  color: #ffffff;
+  background: #eef4ed;
+
+  color: black;
   margin-top: 0px;
   display: flex;
   align-items: center;
@@ -166,9 +139,9 @@ body::after {
 .about-main-top-left {
   width: 38.2%;
   padding: 20px;
-  background-color: #42a5f5;
+  background-color: #90e0ef;
   color: #ffffff;
-  transform: translateX(-100vw);
+  transform: translateY(100vh);
   opacity: 0;
   transition: all 1.2s ease-out;
 }
@@ -181,8 +154,8 @@ body::after {
 .about-main-top-right {
   width: 61.8%;
   padding: 20px;
-  background-color: #ef5350;
-  color: #ffffff;
+  background-color: #cae9ff;
+  color: black;
   transform: translateX(100vw);
   opacity: 0;
   transition: all 1.4s ease-out;
@@ -195,9 +168,9 @@ body::after {
 
 .about-main-bottom {
   height: 61.8%;
-  background-color: #29b6f6;
+  background-color: #efebce;
   padding: 20px;
-  color: #ffffff;
+  color: black;
   transform: translateY(100vh);
   opacity: 0;
   transition: all 1.6s ease-out;
@@ -220,7 +193,7 @@ body::after {
   height: 100%;
   padding: 20px;
   color: #ffffff;
-  background-color: #7e57c2;
+  background-color: #8da9c4;
   transform: translateX(100vw) rotate(15deg);
   opacity: 0;
   transition: all 1.8s ease-out;
