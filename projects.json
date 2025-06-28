@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Portfolio Website",
+    "description": "A modern portfolio website built with HTML, CSS, and JavaScript featuring glassmorphism design and dynamic content loading.",
+    "technologies": ["HTML", "CSS", "JavaScript", "acha lodex"],
+    "github": "https://github.com/your-username/portfolio",
+    "demo": "https://your-portfolio.com",
+    "image": "./assets/project1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Task Management App",
+    "description": "A full-stack task management application with user authentication, real-time updates, and responsive design.",
+    "technologies": ["React", "Node.js", "MongoDB"],
+    "github": "https://github.com/your-username/task-app",
+    "demo": "https://your-task-app.com",
+    "image": "./assets/project2.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Weather Dashboard",
+    "description": "A weather dashboard that displays current weather conditions and forecasts using external APIs with beautiful data visualizations.",
+    "technologies": ["Vue.js", "Chart.js", "API Integration"],
+    "github": "https://github.com/your-username/weather-dashboard",
+    "demo": "https://your-weather-app.com",
+    "image": "./assets/project3.jpg"
+  }
+]
